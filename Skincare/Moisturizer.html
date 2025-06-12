@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GlowCare - Feuchtigkeitscremes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="Skincare.ico">
+  <link rel="stylesheet" href="Skincare css.css" />
+
+
+  <style>
+
+    body {
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      background-image: url("https://images.squarespace-cdn.com/content/v1/5b6a36103e2d09cdc27e27e3/1678295603548-641PCEGD08XNJACC0ADT/spa-background-on-pink-bakground-flat-lay-2021-08-26-18-08-12-utc.jpg?format=2500w");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      min-height: 40vh;
+      margin: 0;
+      padding: 20px;
+
+    }
+
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .product-card h4 {
+      color: #d6336c;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: #fff;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+      margin-top: 3rem;
+      background-image: url("https://images.squarespace-cdn.com/content/v1/5b6a36103e2d09cdc27e27e3/1678295603548-641PCEGD08XNJACC0ADT/spa-background-on-pink-bakground-flat-lay-2021-08-26-18-08-12-utc.jpg?format=2500w");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      min-height: 40vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+<header>
+  <h1><a href="Skincare.html" class="logo">GlowCare</a></h1>
+
+  <nav>
+    <a href="Skincare.html">Startseite</a>
+    <a href="#info">Produktinfo</a>
+    <a href="#anwendung">Anwendung</a>
+    <a href="#warenkorb">🛒 <span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<section class="hero" style="background: url('https://images.unsplash.com/photo-1600181958892-c6c2b2e94aab?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; height: 50vh;">
+  <h2>Feuchtigkeitsseren & Cremes</h2>
+</section>
+
+<section class="section" id="info">
+  <h3>Produktbeschreibung</h3>
+  <div class="card">
+    <p>Unsere Feuchtigkeitsprodukte versorgen deine Haut intensiv mit Feuchtigkeit und pflegen sie geschmeidig und strahlend.</p>
+    <ul>
+      <li>✓ Mit hochwertigen Wirkstoffen wie Hyaluronsäure und Vitaminen</li>
+      <li>✓ Für alle Hauttypen geeignet</li>
+      <li>✓ Frei von Parabenen und Silikonen</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="produkte">
+  <h3>Serum</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://colibriskincare.de/cdn/shop/files/colibriskincare-vitaminA-serum-02A.jpg?v=1744101790" height="280" width="260" alt="Feuchtigkeitsserum" />
+      <h4>Vitamin A Serum</h4>
+      <p class="price"><strong>14.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Hydrating Gel', 14.99)">In den Warenkorb</button>
+
+    </div>
+    <div class="product-card">
+      <img src="https://iwantyounaked.com/cdn/shop/files/FS-01_0785983389761_01-3_LOW.jpg?v=1737033215" height="280" width="260" alt="Tagescreme" />
+      <h4>Hyaluron Boost Serum</h4>
+      <p class="price"><strong>14.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Hyaluron Boost Serum', 14.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://skincare-drfitz.de/wp-content/uploads/Serum_Clear-Skin2-neu.png" height="280" width="260" alt="Nachtcreme" />
+      <h4>Clear Skin Serum</h4>
+      <p class="price"><strong>19.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Clear Skin Serum', 19.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://eisenberg.com/cdn/shop/files/3259551504216_SERUM_AFFINANT_VISAGE_1.jpg?v=1689157418" height="280" width="260" alt="Augencreme" />
+      <h4>Face Refining Serum</h4>
+      <p class="price"><strong>10.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Face Refining Serum', 10.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://caudalie-europe.imgix.net/media/catalog/product/1/_/1_rvlift_serum_packshot_1_.jpg?auto=format,compress&cs=srgb&fm=auto&w=1200" height="280" width="260" alt="Augencreme" />
+      <h4>Lifting-Serum</h4>
+      <p class="price"><strong>10.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Lifting-Serum', 10.99)">In den Warenkorb</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="produkte">
+  <h3>Beauty Masken</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://cosibella.com.de/hpeciai/96bcef330cfa61c3748c5c540d4a6b3d/ger_pl_Beauty-of-Joseon-Red-Bean-Refreshing-Pore-Mask-Ton-Maske-140ml-15486_4.webp" height="280" width="260" alt="Feuchtigkeitsserum" />
+      <h4>Ton-Maske</h4>
+      <p class="price"><strong>8.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Ton-Maske', 8.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://www.imageskincare.de/media/catalog/product/cache/df067f6aa0085df42263bc7d81c53171/m/k/mk-106n_1.png" height="280" width="260" alt="Tagescreme" />
+      <h4>I MASK firming transformation mask</h4>
+      <p class="price"><strong>17.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('I MASK firming transformation mask', 17.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://dr-spiller.com/media/e1/17/32/1681900932/trawenmoor_purification_mask_00110016.webp" height="280" width="260" alt="Nachtcreme" />
+      <h4>Purification Mask</h4>
+      <p class="price"><strong>6.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Purification Mask', 6.99)">In den Warenkorb</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="produkte">
+  <h3>Body Lotion</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://www.imageskincare.de/media/catalog/product/cache/1e1e9baf02c2daa40c835fad34d48eeb/1/1/11_6.png" height="280" width="260" alt="Feuchtigkeitsserum" />
+      <h4>Body Spa Body Lotion</h4>
+      <p class="price"><strong>12.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Body Spa Body Lotio', 12.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://sanssoucis.de/cdn/shop/files/CSS_BodyElixirAktivLiftingKoerpermilchHand1-975.jpg?v=1739277429&width=1500" height="280" width="260" alt="Tagescreme" />
+      <h4>Body Elixir Hyaluron Body Lotion</h4>
+      <p class="price"><strong>16.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Body Elixir Hyaluron Body Lotion', 16.99)">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img src="https://stackedskincare.com/cdn/shop/files/stackedskincare-body-skincare-duo-32514921136264.png?v=1687892671" height="280" width="260" alt="Nachtcreme" />
+      <h4>Skincare Duo</h4>
+      <p class="price"><strong>9.99 €</strong></p>
+      <button class="add-to-cart" onclick="addToCart('Skincare Duo', 9.99)">In den Warenkorb</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="anwendung">
+  <h3>Anwendung</h3>
+  <div class="card">
+    <p>Morgens und abends nach der Reinigung 2–3 Tropfen sanft in Gesicht und Hals einmassieren. Danach eine Tages- oder Nachtpflege auftragen.</p>
+  </div>
+</section>
+
+<footer>
+
+  <h2 id="kontakte">Kontakt</h2>
+  <form>
+    <div class="kontakt-wrapper">
+      <div class="Kontaktbereich">
+        <a href="#"><i class="fab fa-contact"></i> Kontankte</a>
+        <p>Glow Care</p>
+        <p>Careweg 7, 12345 Leckerstadt</p>
+        <p>Tel: 0123 456789; Email: hallo@skincare.de</p>
+      </div>
+
+      <div class="Kontaktbereich">
+        <h3>🕐 Öffnungszeiten</h3>
+        <p>Mo - Fr: 11:00 - 22:00 Uhr</p>
+        <p>Sa - So: 13:00 - 23:00 Uhr</p>
+      </div>
+
+      <div class="Kontaktbereich">
+        <h3><i class="fas fa-hashtag"></i> Folge uns</h3>
+        <p>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a> |
+          <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+        </p>
+      </div>
+
+
+      <div class="Kontaktbereich">
+        <h3>🧾 Newsletter</h3>
+        <p>Bleib auf dem Laufenden – Skincare Produkte-Aktionen & Specials!</p>
+        <input type="email" placeholder="Deine E-Mail"><br>
+        <button>Abonnieren</button>
+      </div>
+
+      <div class="Kontaktbereich">
+        <p><a href="#top">🔝 Nach oben</a></p>
+      </div>
+    </div>
+
+    &copy; 2025 GlowCare. Alle Rechte vorbehalten.
+</footer>
+</body>
+</html>
